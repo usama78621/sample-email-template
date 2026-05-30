@@ -1,0 +1,17 @@
+{
+  "first_name": "Amy",
+  "order_number": "ORD-12345",
+  "items": [
+    {
+      "name": "Blue T-Shirt",
+      "price": "$29.00",
+      "image_url": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Red Hat",
+      "price": "$15.00",
+      "image_url": "https://via.placeholder.com/150"
+    }
+  ],
+  "total": "$44.00"
+}
