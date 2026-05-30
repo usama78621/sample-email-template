@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Shipping Confirmation</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f6f6f6;">
+  <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="font-family: Arial, sans-serif;">
+    <tr>
+      <td align="center">
+        <table role="presentation" cellpadding="0" cellspacing="0" width="600" style="background-color:#ffffff; border:1px solid #e0e0e0; padding:20px; margin:20px;">
+          <tr>
+            <td style="text-align:center;">
+              <h1 style="margin:0;">Hello {{first_name}},</h1>
+              <p style="margin:0; margin-top:10px;">Your order <strong>{{order_number}}</strong> has shipped!</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-top:20px;">
+              <h2 style="margin:0 0 10px 0;">Items Shipped</h2>
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
+                <thead>
+                  <tr>
+                    <th align="left" style="padding:5px 0;">Item</th>
+                    <th align="left" style="padding:5px 0;">Quantity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {{#each items}}
+                  <tr>
+                    <td style="padding:5px 0;">{{name}}</td>
+                    <td style="padding:5px 0;">{{quantity}}</td>
+                  </tr>
+                  {{/each}}
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-top:20px;">
+              <p style="margin:0;"><strong>Shipping Address:</strong> {{shipping_address}}</p>
+              <p style="margin:5px 0 0 0;"><strong>Estimated Delivery:</strong> {{estimated_delivery}}</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-top:20px;">
+              <p style="margin:0;">Thank you for shopping with us!</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
