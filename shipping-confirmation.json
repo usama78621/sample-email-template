@@ -1,0 +1,16 @@
+{
+  "first_name": "Customer",
+  "order_number": "ORD-12345",
+  "items": [
+    {
+      "name": "Blue T-Shirt",
+      "quantity": 1
+    },
+    {
+      "name": "Red Hat",
+      "quantity": 2
+    }
+  ],
+  "shipping_address": "123 Main St, Springfield, IL",
+  "estimated_delivery": "June 5, 2026"
+}
